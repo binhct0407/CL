@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion "$rootProject.compileSdkVersion"
+    buildToolsVersion "$rootProject.buildToolsVersion"
+
+    defaultConfig {
+        minSdkVersion "$rootProject.minSdkVersion"
+        targetSdkVersion "$rootProject.targetSdkVersion"
+        versionCode 232
+        versionName "2.3.2"
+    }
+}
+
+dependencies {
+    compile "com.android.support:support-annotations:$rootProject.supportLibraryVersion"
+    compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/title_newcomelist"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/new_come_list_title"
+        android:textSize="18.0sp" />
+
+    <ImageView
+        android:id="@+id/new_come_list_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_newcomelist"
+        android:background="@mipmap/advice" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12.0sp"
+        android:id="@+id/new_come_list_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_come_list_banner"
+        android:text="@string/new_come_list_title2" />
+
+    <com.srx.widget.PullToLoadView
+
+        android:id="@+id/new_come_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/new_come_list_title2"></com.srx.widget.PullToLoadView>
+</RelativeLayout>

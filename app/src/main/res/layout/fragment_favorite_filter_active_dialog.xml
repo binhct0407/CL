@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300.0dp"
+    android:background="@drawable/rounded_layout"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <Button
+        android:id="@+id/filter_active_dialog_doFilter"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button_login"
+        android:gravity="center"
+        android:text="@string/fragment_favorite_fiteractive"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/filter_active_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button_login"
+        android:gravity="center"
+        android:text="@string/fragment_favorite_fiteractive_cancel"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

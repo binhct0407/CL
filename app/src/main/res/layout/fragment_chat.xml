@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+    tools:context="jp.couplink.app.message.ChatFragment">
+
+
+    <ScrollView
+        android:id="@+id/chatfragment_scrollView"
+        android:fillViewport="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+
+        <RelativeLayout
+
+            android:id="@+id/chatfragment_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/chatfragment_match_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7acee0">
+
+                <TextView
+                    android:id="@+id/chatfragment_back"
+                    android:layout_width="32.0dp"
+                    android:layout_height="32.0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/angle_left" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="60.0dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/chatfragment_profile_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pic5"
+                        app:border_color="@android:color/transparent"
+                        app:border_width="3dp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="しょうた"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_menu_16dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/chatfragment_match_banner"
+                android:layout_margin="5.0dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/chatfragment_matched_background"
+                android:background="@drawable/match_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/chatfragment_title_name"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#e88994"
+                    android:textSize="20.0sp"
+                    android:layout_marginBottom="50dp"
+                    android:text="しょうたさんと
+マッチングが成立しました!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_below="@+id/chatfragment_title_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/linearLayout"
+                        android:layout_width="200.0dp"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pic1"
+                            app:border_color="@android:color/transparent"
+                            app:border_width="3dp" />
+
+                        <ImageView
+                            android:layout_width="60.0dp"
+                            android:layout_height="60.0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/match_vs" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pic5"
+                            app:border_color="@android:color/transparent"
+                            app:border_width="3dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:textSize="12.0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="さっそくメッセージを送ってみましょう♫
+※2通目以降は連絡先も交換できます。" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/chatfragment_btn_up"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/rounded_button"
+                    android:text="返信率UP!? メッセージ定型文"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_edittext_height" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/chatfragment_matched_background"
+                android:id="@+id/chatfragment_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/include_chatfragment_messagearea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="bottom" />
+</LinearLayout>

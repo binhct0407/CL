@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/first_tutorial_6_bg">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/first_tutorial_6"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/login_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:background="@mipmap/first_tutorial_btn_fb" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="61dp"
+        android:background="@mipmap/first_tutorial_btn_mail" />
+
+
+</RelativeLayout>

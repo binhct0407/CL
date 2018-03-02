@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/actionbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+
+    <TextView
+        android:id="@+id/register_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Couplink会員登録（無料）"
+        android:textColor="@android:color/black"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/register_login_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_facebook_height"
+        android:layout_below="@+id/register_txt_title"
+        android:layout_margin="@dimen/padding_top_login"
+        android:background="@drawable/rounded_button_facebook"
+        android:drawableLeft="@drawable/ic_facebook_32dp"
+        android:gravity="center"
+        android:text="Facebookでログイン"
+        android:textColor="@android:color/white"
+        android:textSize="22.0sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_below="@id/register_login_facebook"
+        android:layout_margin="15.dp"
+        android:background="#c2c2c2"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edittext_height"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_login_edittext"
+            android:hint="メールアドレス"
+            android:padding="5dp"
+            android:textSize="12.0sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edittext_height"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_login_edittext"
+            android:hint="パスワード（英数字8文字以上）"
+            android:padding="5dp"
+            android:textSize="12.0sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edittext_height"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_login_edittext"
+            android:hint="パスワード（確認のため再度入力ください）"
+            android:padding="5dp"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_facebook_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_button_login"
+            android:gravity="center"
+            android:text="会員登録（無料）"
+            android:textColor="@android:color/white"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="10.0sp"
+            android:text="※ご入力いただいたメールアドレスに確認メールが届きます。"
+            android:textColor="@color/text_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="利用規約"
+                android:textColor="@color/facebook_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="|"
+                android:textColor="@color/facebook_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="プライバシーポリシー"
+                android:textColor="@color/facebook_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

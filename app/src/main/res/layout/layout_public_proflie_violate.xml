@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7acee0">
+
+        <TextView
+            android:textSize="16.0sp"
+            android:id="@+id/public_profile_violate_back"
+            android:layout_width="32.0dp"
+            android:layout_height="32.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/angle_left" />
+
+
+        <TextView
+            android:textSize="16.0sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="非表示・ブロックの設定"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/violate_infor"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pic1"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:textColor="@color/text_color"
+                android:text="Mary"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:textColor="@color/text_color"
+                android:text="31歳 神奈川県"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:drawablePadding="0dp"
+        android:drawableLeft="@drawable/ic_eye_black_16dp"
+        android:padding="5dp"
+        android:id="@+id/violate_txt_hide"
+        android:textSize="14.0sp"
+        android:layout_below="@id/violate_infor"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:text="@string/violate_hide"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_edittext_gray"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/violate_txt_block"
+        android:textSize="14.0sp"
+        android:layout_below="@id/violate_txt_hide"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:text="@string/violate_block"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_edittext_gray"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/violate_txt_doblock"
+        android:background="@drawable/rounded_button_login"
+        android:layout_below="@id/violate_txt_block"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="設定内容を更新する"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height" />
+
+
+</RelativeLayout>

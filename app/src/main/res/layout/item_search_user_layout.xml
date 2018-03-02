@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/search_user_default_background"
+    android:padding="@dimen/user_item_padding">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/search_user_default_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        android:id="@+id/item_search_user_mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/item_search_user_imgContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/item_search_user_imgMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/share_count_container_size"
+                    android:layout_height="@dimen/share_count_container_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/share_count_container_margin"
+                    android:background="@drawable/search_user_cycle_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/share_count_container_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共通点"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/share_count_title_font_size" />
+
+                    <TextView
+                        android:id="@+id/item_search_user_txtShareCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/share_count_large_font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_search_user_linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_search_user_txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/bullet_green"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/message_font_size" />
+
+                    <TextView
+                        android:id="@+id/item_search_user_txtUserInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/search_user_item_container_padding"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/message_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/share_count_container_size"
+                    android:layout_height="@dimen/share_count_container_size"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|bottom"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/item_search_user_img_heart_like"
+                        android:layout_width="35.0dp"
+                        android:layout_height="35.0dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/ic_heart_white" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/item_search_user_btnJoinEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="イベント参加"
+                android:textSize="@dimen/share_count_title_font_size"
+                app:bootstrapBrand="danger"
+                app:buttonMode="regular"
+                app:roundedCorners="false"
+                app:showOutline="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/search_user_item_container_padding">
+
+                <LinearLayout
+                    android:id="@+id/item_search_user_subImageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/search_user_item_bottom_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_search_user_txtMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_message_blue_16dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/share_count_title_font_size" />
+
+                    <TextView
+                        android:id="@+id/item_search_user_txtNotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_notes_16dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/share_count_title_font_size" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/item_search_user_userImageListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55.0dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

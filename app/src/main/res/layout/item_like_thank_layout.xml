@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/search_user_default_background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/imgContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_comer_list">
+
+        <ImageView
+            android:id="@+id/fragment_like_thankyou_imageFirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/images_woman" />
+
+        <LinearLayout
+            android:id="@+id/layout_round_img1"
+            android:layout_width="@dimen/share_count_container_size"
+            android:layout_height="@dimen/share_count_container_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/share_count_container_margin"
+            android:background="@drawable/search_user_cycle_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/share_count_container_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共通点"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/share_count_title_font_size" />
+
+            <TextView
+                android:id="@+id/txtShareCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/share_count_large_font_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_round_img2"
+            android:layout_width="@dimen/share_count_container_size"
+            android:layout_height="@dimen/share_count_container_size"
+            android:layout_margin="@dimen/share_count_container_margin"
+            android:layout_toRightOf="@id/layout_round_img1"
+            android:background="@drawable/search_user_cycle_background_red"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/share_count_container_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="NEW"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/share_count_title_font_size"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/fragment_like_thankyou_target_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/bullet_green"
+            android:text="投資勧誘など"
+            android:textSize="@dimen/font_size_extra"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin_bottom_imgmain"
+            android:background="@drawable/rounded_text_publicprofile_red"
+            android:text="@string/txt_event_joined"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/message_font_size" />
+
+        <TextView
+            android:layout_margin="@dimen/margin_bottom_imgmain"
+            android:id="@+id/fragment_like_thankyou_target_self_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_message_blue_24dp"
+            android:text="ネットワークビジネス・投資勧誘など"
+            android:textSize="@dimen/message_font_size" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

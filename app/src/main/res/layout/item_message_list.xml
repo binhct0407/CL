@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:id="@+id/item_message_list_layout_mached_user"
+        android:layout_width="70.0dp"
+        android:layout_height="70.0dp">
+
+        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+            android:layout_centerVertical="true"
+            app:hasBorder="false"
+            android:src="@drawable/pic5"
+            android:id="@+id/item_message_list_icon_message_matched_user"
+            android:layout_width="70.0dp"
+            android:layout_height="70.0dp" />
+
+        <TextView
+            android:background="@drawable/ic_heart_matched_list"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="25.0dp"
+            android:layout_height="25.0dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/item_message_list_layout_mached_user"
+        android:layout_margin="5.0dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_message_list_linearLayout2">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/item_message_list_name_matched_message"
+            android:textColor="#58B5C4"
+            android:textSize="19.0sp"
+            android:text="わか"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#616161"
+            android:textSize="15sp"
+            android:id="@+id/item_message_list_txt_last_message"
+            android:text="メッセージのやりとりを開始しましょう！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="2dp"
+        android:id="@+id/item_message_list_txt_conor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_text_publicprofile_gray"
+        android:text="イベント参加者"
+        android:textColor="@android:color/white"
+        android:textSize="10.0sp" />
+
+</RelativeLayout>

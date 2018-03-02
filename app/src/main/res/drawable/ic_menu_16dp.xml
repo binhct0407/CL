@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="1792"
+    android:viewportHeight="1792"
+    android:width="20dp"
+    android:height="20dp">
+    <path
+        android:pathData="M576 736l0 192q0 40 -28 68 -28 28 -68 28l-192 0q-40 0 -68 -28 -28 -28 -28 -68l0 -192q0 -40 28 -68 28 -28 68 -28l192 0q40 0 68 28 28 28 28 68zm512 0l0 192q0 40 -28 68 -28 28 -68 28l-192 0q-40 0 -68 -28 -28 -28 -28 -68l0 -192q0 -40 28 -68 28 -28 68 -28l192 0q40 0 68 28 28 28 28 68zm512 0l0 192q0 40 -28 68 -28 28 -68 28l-192 0q-40 0 -68 -28 -28 -28 -28 -68l0 -192q0 -40 28 -68 28 -28 68 -28l192 0q40 0 68 28 28 28 28 68z"
+        android:fillColor="#ffffff" />
+</vector>

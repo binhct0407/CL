@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:padding="10dp"
+    android:background="@drawable/linearlayout_divider"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_smile_message"
+        android:layout_width="20.0dp"
+        android:layout_height="20.0dp" />
+
+    <EditText
+        android:padding="3dp"
+        android:textSize="13.0sp"
+        android:gravity="top|left"
+        android:background="@drawable/rounded_edittext_gray"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:id="@+id/chatfragment_messageArea_edittext" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18.0sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="送信"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:padding="4dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:id="@+id/chatfragment_messageArea_sendButton" />
+</LinearLayout>

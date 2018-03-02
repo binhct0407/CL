@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+
+    androidExtensions {
+        experimental = true
+    }
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion "$rootProject.compileSdkVersion"
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "jp.couplink"
+        minSdkVersion "$rootProject.minSdkVersion"
+        targetSdkVersion "$rootProject.targetSdkVersion"
+        versionCode 1
+        versionName "3.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildscript {
+
+
+        dependencies {
+
+            // NOTE: Do not place your application dependencies here; they belong
+            // in the individual module build.gradle files
+        }
+    }
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+    }
+
+}
+
+
+dependencies {
+    compile 'com.android.support:multidex:1.0.1'
+    compile "com.google.firebase:firebase-database:11.8.0"
+    implementation 'com.android.support:support-v4:26.1.0'
+    compile 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible,GradleCompatible
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.firebase:firebase-client-android:2.4.0'
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.android.support:support-vector-drawable:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.yinglan.shadowimageview:shadowimageview:1.0.4'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.github.tosslife:pullloadview:1.1.0'
+    implementation project(':AndroidBootstrap')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.google.android.gms:play-services:11.8.0'
+    implementation files('src/libs/growthbeat-2.0.7.jar')
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    compile 'com.github.bumptech.glide:glide:3.5.1'
+    compile 'com.lorentzos.swipecards:library:1.0.9'
+}
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'com.google.gms.google-services'

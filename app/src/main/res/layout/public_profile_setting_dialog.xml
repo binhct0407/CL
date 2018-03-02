@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/publicprofile_setting_favorite"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="お気に入りにする"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button_publicprofile_setting_red"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height" />
+
+    <TextView
+        android:layout_below="@id/publicprofile_setting_favorite"
+        android:id="@+id/publicprofile_setting_report"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="違反報告する"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button_publicprofile_setting_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height" />
+
+    <TextView
+        android:layout_below="@id/publicprofile_setting_report"
+        android:id="@+id/publicprofile_setting_violate"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="非表示・ブロックの設定"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button_publicprofile_setting_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height" />
+
+    <TextView
+        android:layout_below="@id/publicprofile_setting_violate"
+        android:id="@+id/publicprofile_setting_exit"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="キャンセル"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button_publicprofile_setting_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height" />
+
+
+</RelativeLayout>

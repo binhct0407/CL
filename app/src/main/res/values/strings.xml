@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Couplink</string>
+    <string name="title_activity_main">Couplink</string>
+    <string name="title_nagivation_search">検索</string>
+    <string name="title_navigation_favorite">いいね</string>
+    <string name="title_navigation_new">新着ユーザー</string>
+    <string name="title_navigation_message">メッセージ</string>
+    <string name="title_navigation_setting">マイページ</string>
+
+
+    <string name="facebook_app_id">904928556350111</string>
+    <string name="fb_login_protocol_scheme">fb904928556350111</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="regist">登録</string>
+    <string name="not_displayed_msg">表示できませんでした</string>
+    <string name="network_error_meg">ご迷惑をお掛けしております。\n通信環境をご確認のうえ\n再度アクセスしてください。</string>
+    <string name="network_error_meg2">通信環境をご確認のうえ\n再度アクセスしてください。</string>
+    <string name="re_access">再アクセス</string>
+    <string name="network_error_access_code">AccessCode %1$s</string>
+    <string name="wait_msg">しばらくお待ちください</string>
+
+    <string name="login_forgot_password">
+          パスワードをお忘れの方</string>
+
+
+    //mocking public profile
+    <string name="status_profile">はじめまして。
+交代勤務で会社員をやっています。
+休みは平日休み土日休みともにあり、比較的休みは取りやすいです。
+趣味は映画鑑賞、スノボー、ゲーム、遊園地、ONE PIECEのアニメ鑑賞、ランニングです。</string>
+
+
+    <string name="txt_rule">メールアドレス・LINE ID・Facebookアカウント・携帯電話番号など、あなたを特定できる個人情報は送信できません。</string>
+
+    <string name="like_detail_dialog_txt">
+        メッセージは審査後に送信されます。健全な内容でない場合、いいね！は届きますがメッセージは削除され、使用したポイント・コインは戻りませんので、同意した上で送信してください。</string>
+
+
+    //string in violate fragment
+    <string name="violate_hide">非表示にする \n
+
+自分の画面にお相手を表示されないようにする機能です。 検索結果画面や、メッセージ画面に表示されなくなります。 各種設定から解除できます。</string>
+    <string name="violate_block">ブロックする \n
+
+自分とお相手の画面にお互いに表示されないようにする機能です。 メッセージを含め、一切のコンタクトが取れなくなります。 各種設定から解除できます。</string>
+
+    <string-array name="report_reason">
+        <item>違反項目を選択してください</item>
+        <item>ネットワークビジネス・投資勧誘など</item>
+        <item>暴言・誹謗中傷・卑猥なメッセージ</item>
+        <item>他人なりすまし・偽アカウント</item>
+        <item>他サイトの「サクラ」行為</item>
+        <item>金銭目的</item>
+        <item>ストーカー行為</item>
+        <item>その他</item>
+    </string-array>
+
+
+    //new come_list
+    <string name="new_come_list_title">新着ユーザー 無料でいいね！</string>
+    <string name="new_come_list_title2">新着ユーザーには無料でいいね！が送れます。
+気軽にいいね！をしてみましょう。</string>
+
+    //message list
+    <string name="event_list_title_1">ここでは、同イベントに参加したお相手が表示されます。</string>
+    <string name="event_list_title_2">まだイベントに参加していないようですね。カップリンクを使うイベントを探してみましょう。</string>
+    <string name="btn_find_event">イベントを探す</string>
+
+
+    //setting fragment
+    <string name="setting_fragment_title">マイページ</string>
+
+
+    //mocking coin purchase
+    <string name="coin_purchase_title1">コイン残高52枚</string>
+    <string name="coin_purchase_title2">ご希望の購入コイン数を選んでください。</string>
+    <string name="coin_purchase_text"> iOSをご利用の方へ：本人認証のため、アイテム購入時にApple IDを複数回求められる場合があります。（この時点で課金処理が行われることはありません）
+
+ Androidをご利用の方へ：GooglePlayギフトカードやプロモーションコードを利用しての有料会員登録はできません。
+
+ 「購入手続きが完了しました」と表示された後で、通信エラーが発生した場合は、リストアボタンを押して下さい。
+
+ その他のエラーが発生した場合またはリストアボタンを押しても購入情報が反映されない場合は、各種設定>ヘルプ>お問い合わせよりお知らせ下さい。</string>
+
+
+    //string firebase
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="facebook_title_text">Facebook Login</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+
+    //string receive_like_list
+    <string name="txt_event_joined">イベント参加者</string>
+
+
+    <!-- yearold verification -->
+    <string name="title_activity_age_verification_preview">年齢確認プレビュー</string>
+    <string name="preview_end">次へ</string>
+    <string name="age_verification_notice_text">証明書が切れていないかご確認ください。\n※画像が見切れていると再審査となります。</string>
+
+    //fragment favorite
+    <string name="fragment_favorite_fiteractive"> 退会者を表示する</string>
+    <string name="fragment_favorite_hide_filter">退会者を非表示にする</string>
+
+    <string name="fragment_favorite_fiteractive_cancel">閉じる</string>
+
+
+    //fragment membership
+    <string name="fragment_membership_actionbar_txt">有料会員登録</string>
+
+    <string name="fragment_matched_unread_nextpage">メッセージを送る</string>
+    <string name="fragment_matched_unread_back">あとで</string>
+
+
+</resources>

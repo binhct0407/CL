@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    // I think it should be more smaller if i set 15sp.
+    <item
+        android:width="100.0dp"
+        android:height="30.0dp"
+
+        android:drawable="@drawable/ic_heart_count"
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+
+</layer-list>

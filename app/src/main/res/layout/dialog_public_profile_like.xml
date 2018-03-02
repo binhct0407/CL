@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/dialog_public_profile_like_dialog_heart"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+
+        app:srcCompat="@drawable/ic_favorite_red_48dp"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:id="@+id/layout_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_public_profile_like_dialog_heart"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_login_edittext"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="43dp"
+            android:src="@drawable/public_profile_like_dialog_banner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text=" +2いいね！で、特別ないいね！が送れます★"
+            android:textColor="@android:color/black"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/gradient"
+        android:id="@+id/dialog_publicprofile_like_sendmessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height"
+        android:layout_below="@id/layout_banner"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/ic_envelop_16dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="メッセージ付きいいね！"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/dialog_publicprofile_like_dialog_like"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height"
+        android:layout_below="@id/dialog_publicprofile_like_sendmessage"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_edittext_red"
+        android:drawableLeft="@drawable/ic_heart_white_16dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="違反報告する"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jp.couplink">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- [START Growthbeat Push] -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="jp.mynavi.baito.mynavishortapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="jp.mynavi.baito.mynavishortapp.permission.C2D_MESSAGE" />
+
+    <!-- [END Growthbeat Push] -->
+    <application
+        android:name=".app.utils.CouplinkApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".app.tutorial.WelcomeActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.like_thankyou.LikeThankActivity"></activity>
+        <activity android:name=".app.like_thankyou.LikeThankFragment" />
+        <activity android:name=".app.login.RegisterActivity" />
+        <activity android:name=".app.activity.SplashActivity" />
+        <activity android:name=".app.activity.MainActivity" />
+        <activity
+            android:name=".app.activity.FilterFriendActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".app.activity.FacebookLoginActivity" />
+        <activity
+            android:name=".app.message.ChatFragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.activity.MultiChoiceSettingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".app.login.LoginActivity" />
+
+        <receiver
+            android:name=".app.fragment.SearchFragment$FilterUserBroadcast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="action.couplink.filter_user" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".app.activity.ActivityDynamicLink">
+            <intent-filter>
+                <data android:scheme="http" />
+                <!-- or you can use deep linkdolikelike -->
+
+                <data
+                    android:host="xyz.abc.com"
+                    android:scheme="http" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- [START Growthbeat Push] -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.growthpush.notification.icon"
+            android:resource="@drawable/ic_launcher_background" />
+        <meta-data
+            android:name="com.growthpush.notification.icon.background.color"
+            android:resource="@android:color/white" />
+        <meta-data
+            android:name="com.growthpush.dialog.icon"
+            android:resource="@drawable/ic_launcher_background" />
+
+        <activity
+            android:name="com.growthpush.view.AlertActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <service
+            android:name="com.growthpush.TokenRefreshService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service android:name="com.growthpush.RegistrationIntentService" />
+        <service
+            android:name="com.growthpush.ReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="jp.mynavi.baito.mynavishortapp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="jp.mynavi.baito.mynavishortapp" />
+            </intent-filter>
+        </receiver>
+        <!-- [END Growthbeat Push] -->
+
+       <activity android:name=".app.login.LoginWebViewAcitvity"></activity>
+    </application>
+
+</manifest>

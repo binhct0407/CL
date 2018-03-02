@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="300.0dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_layout"
+    android:padding="16dp">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="顔写真リクエストを送りますか？" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/custom_dialog_btn_cancel"
+            android:layout_width="60.0dp"
+            android:layout_height="45.0dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_button_cancel"
+            android:gravity="center"
+            android:text="いいえ" />
+
+        <Button
+            android:id="@+id/custom_dialog_btn_ok"
+            android:layout_width="150.0dp"
+            android:layout_height="45.0dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button_login"
+            android:gravity="center"
+            android:text="はい"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

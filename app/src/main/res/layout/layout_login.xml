@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_login_actionbar"
+        layout="@layout/actionbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/signup"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#f1f1f1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/include_login_actionbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Couplinkの登録がお済みでない方"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/login_btn_register"
+            android:textStyle="bold"
+            android:textSize="12.0sp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_login_text"
+            android:textColor="@color/colorPrimary"
+            android:text="新規会員登録（無料）"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_image_image_height" />
+
+    </LinearLayout>
+
+    <TextView
+        android:drawableLeft="@drawable/ic_facebook_32dp"
+        android:id="@+id/login_btn_facebooklogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_facebook_height"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/signup"
+        android:layout_margin="@dimen/padding_top_login"
+        android:background="@drawable/rounded_button_facebook"
+        android:gravity="center"
+        android:text="Facebookでログイン"
+        android:textColor="@android:color/white"
+        android:textSize="22.0sp" />
+
+    <View
+        android:id="@+id/line"
+        android:background="#c2c2c2"
+        android:layout_below="@id/login_btn_facebooklogin"
+        android:layout_margin="15.dp"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"></View>
+
+    <LinearLayout
+        android:layout_below="@+id/line"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:padding="5dp"
+            android:textSize="12.0sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="メールアドレス"
+            android:background="@drawable/rounded_login_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edittext_height" />
+
+        <EditText
+            android:padding="5dp"
+            android:textSize="12.0sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="パスワード"
+            android:background="@drawable/rounded_login_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edittext_height" />
+
+        <TextView
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_18dp"
+            android:textSize="14.0sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/facebook_color"
+            android:text="@string/login_forgot_password"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/login_btn_login"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button_login"
+            android:text="ログイン"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_facebook_height" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/facebook_color"
+                android:text="利用規約"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/facebook_color"
+                android:text="|"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="プライバシーポリシー"
+                android:textColor="@color/facebook_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

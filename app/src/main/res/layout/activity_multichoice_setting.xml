@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.couplink.app.activity.FilterFriendActivity">
+
+    <include
+        android:id="@+id/include_multichoice_setting_actionbar"
+        layout="@layout/filter_multichoice_action_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:id="@+id/multichoice_setting_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/multichoice_setting_btn_confirm"
+        android:layout_below="@+id/include_multichoice_setting_actionbar"
+        android:choiceMode="multipleChoice">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/multichoice_setting_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_button"
+        android:text="設定"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

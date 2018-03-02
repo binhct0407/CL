@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dip"
+                android:color="@android:color/white" />
+        </shape>
+    </item>
+    <item
+
+        android:drawable="@drawable/ic_heart_white_full"
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp" />
+</layer-list>

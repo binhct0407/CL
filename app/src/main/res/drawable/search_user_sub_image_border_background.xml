@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/user_item_sub_image_padding"
+    android:shape="rectangle">
+
+    <padding />
+
+    <corners
+        android:bottomLeftRadius="@dimen/user_item_sub_image_border_radius"
+        android:bottomRightRadius="@dimen/user_item_sub_image_border_radius"
+        android:topLeftRadius="@dimen/user_item_sub_image_border_radius"
+        android:topRightRadius="@dimen/user_item_sub_image_border_radius" />
+</shape>

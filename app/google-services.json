@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "351927300814",
+    "firebase_url": "https://realtimemessage-42194.firebaseio.com",
+    "project_id": "realtimemessage-42194",
+    "storage_bucket": "realtimemessage-42194.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351927300814:android:2bb863b2a5b5c5c4",
+        "android_client_info": {
+          "package_name": "binh.hblab.realtimemessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351927300814-p1ilk2h967brdkqqb38fgsn5o8qjnv1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "binh.hblab.realtimemessage",
+            "certificate_hash": "fc8b77eaf13e72f3b5956aecf0722efdc6932c97"
+          }
+        },
+        {
+          "client_id": "351927300814-5l30gu7r0gbsa3vpl66p8bro6jfsn30n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC97kX4kNK3UA-C660quGehSn5eSthCv9w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351927300814-a5dnfcbpn4r2vb9uc1v4f1gnkm52kee1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "rtretret",
+                "app_store_id": "34234324"
+              }
+            },
+            {
+              "client_id": "351927300814-5l30gu7r0gbsa3vpl66p8bro6jfsn30n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351927300814:android:870714efa621d2a2",
+        "android_client_info": {
+          "package_name": "jp.couplink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351927300814-beipg4njuc9ivn3bj3a2ir6pufvme8fr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.couplink",
+            "certificate_hash": "fc8b77eaf13e72f3b5956aecf0722efdc6932c97"
+          }
+        },
+        {
+          "client_id": "351927300814-5l30gu7r0gbsa3vpl66p8bro6jfsn30n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC97kX4kNK3UA-C660quGehSn5eSthCv9w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351927300814-a5dnfcbpn4r2vb9uc1v4f1gnkm52kee1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "rtretret",
+                "app_store_id": "34234324"
+              }
+            },
+            {
+              "client_id": "351927300814-5l30gu7r0gbsa3vpl66p8bro6jfsn30n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

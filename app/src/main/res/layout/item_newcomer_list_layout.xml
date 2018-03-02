@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/search_user_default_background">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/search_user_default_background"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp"
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/imgContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_comer_list">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/imgMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout_round_img1"
+                    android:layout_width="@dimen/share_count_container_size"
+                    android:layout_height="@dimen/share_count_container_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/share_count_container_margin"
+                    android:background="@drawable/search_user_cycle_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/share_count_container_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共通点"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/share_count_title_font_size" />
+
+                    <TextView
+                        android:id="@+id/txtShareCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/share_count_large_font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_round_img2"
+                    android:layout_width="@dimen/share_count_container_size"
+                    android:layout_height="@dimen/share_count_container_size"
+                    android:layout_margin="@dimen/share_count_container_margin"
+                    android:layout_toRightOf="@id/layout_round_img1"
+                    android:background="@drawable/search_user_cycle_background_red"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/share_count_container_padding">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEW"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/share_count_title_font_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_round_img3"
+                    android:layout_width="@dimen/share_count_container_size"
+                    android:layout_height="@dimen/share_count_container_size"
+                    android:layout_margin="@dimen/share_count_container_margin"
+                    android:layout_toRightOf="@id/layout_round_img2"
+                    android:background="@drawable/receive_like_cycle_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/share_count_container_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/ic_camera_16dp"
+                        android:text="共通点"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/share_count_title_font_size" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="阪府"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25歳 大阪府"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <TextView
+                        android:id="@+id/txtUserInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/search_user_item_container_padding"
+                        android:drawableLeft="@drawable/ic_message_white_16dp"
+                        android:drawablePadding="5dp"
+                        android:text="よろしくお願いします"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_size_medium" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:gravity="center"
+                android:id="@+id/btnJoinEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="イベント参加"
+                android:textSize="@dimen/share_count_title_font_size"
+                app:bootstrapBrand="danger"
+                app:buttonMode="regular"
+                app:roundedCorners="false"
+                app:showOutline="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_below="@id/imgContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="6dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="職業"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="年収"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="趣味"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="年収"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="趣味"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/btn_new_come_list_free_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/btn_free_like"
+                    android:gravity="center"
+                    android:scaleType="fitCenter" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

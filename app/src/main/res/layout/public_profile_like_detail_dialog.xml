@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/imgContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgMain"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/linearLayout4"
+            android:layout_marginTop="52dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/share_count_container_margin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/share_count_container_padding">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:src="@drawable/pic1"
+                app:border_color="@android:color/white"
+                app:border_width="3dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="ともさんへ \n
+メッセージを送りましょう！
+
+"
+            android:textColor="@color/text_red"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_detail"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignStart="@+id/like_detail_dialog_txt_send"
+            android:layout_below="@+id/txt_detail"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/rounded_edittext_gray"
+            android:gravity="center"
+            android:maxLength="200" />
+
+        <TextView
+            android:id="@+id/txt_count_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edt_detail"
+            android:layout_marginRight="5dp"
+            android:text="00/200文字"
+            android:textColor="@color/text_color"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/txt_rule_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_count_string"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="left"
+            android:text="@string/txt_rule"
+            android:textColor="@android:color/black"
+            android:textSize="10.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_rule_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_rule_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/like_detail_dialog_txt"
+            android:textColor="@color/text_color"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/like_detail_dialog_txt_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edittext_height"
+            android:layout_below="@+id/txt_rule_2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button_login"
+            android:gravity="center"
+            android:text="送信"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
